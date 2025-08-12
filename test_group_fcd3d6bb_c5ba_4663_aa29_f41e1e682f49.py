@@ -2,7 +2,7 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime
-import pendulum
+
 
 def run_adhoc_test_logic(test_case_id):
     print(f"Executing test case: {test_case_id}")
@@ -10,8 +10,7 @@ def run_adhoc_test_logic(test_case_id):
 with DAG(
     dag_id="test_group_fcd3d6bb_c5ba_4663_aa29_f41e1e682f49",
     schedule_interval="36 13 * * *",
-    start_date=pendulum.datetime(2023, 1, 1, tz="Asia/Kolkata"),
-    timezone="Asia/Kolkata",
+    start_date=datetime(2023, 1, 1),
     catchup=False,
 ) as dag:
     
