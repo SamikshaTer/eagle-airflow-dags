@@ -3,7 +3,8 @@ from airflow.operators.python import PythonOperator
 from datetime import datetime
 import pandas as pd
 import snowflake.connector
-
+import sys
+sys.path.append("/home/admsamikshat")
 # --- Import credentials from shared_config ---
 from shared_config.config import DB_CREDENTIALS  # Make sure shared_config is in PYTHONPATH
 
