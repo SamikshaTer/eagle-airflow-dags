@@ -28,8 +28,9 @@ def test_snowflake_fetch():
         print(df.head())
         conn.close()
         print("Snowflake connection closed successfully.")
-        except Exception as e:
+    except Exception as e:
             print(f"ERROR: Failed to close Snowflake connection: {e}")
+            raise
 
 with DAG(
     dag_id="test_snowflake_fetch_dag",
