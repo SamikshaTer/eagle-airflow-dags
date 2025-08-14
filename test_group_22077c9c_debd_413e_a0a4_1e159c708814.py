@@ -83,7 +83,7 @@ def run_adhoc_test_logic(test_case_id, **kwargs):
 
 with DAG(
     dag_id="test_group_22077c9c_debd_413e_a0a4_1e159c708814",
-    schedule_interval="15 11 * * *",
+    schedule_interval="31 11 * * *",
     start_date=datetime(2023, 1, 1),
     catchup=False,
 ) as dag:
