@@ -9,7 +9,7 @@ import warnings
 import sys
 
 # Correct imports from your new dq_engine package
-from dq_engine.shared_config.config import DB_CREDENTIALS
+from dq_engine.config import DB_CREDENTIALS
 from dq_engine.dq_core import get_db_connection, log_test_case_result
 from dq_engine.services import get_test_case_details_from_db, _extract_and_validate_form_data
 from dq_engine.test_case_manager import TestCaseProcessor
